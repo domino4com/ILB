@@ -1,21 +1,17 @@
-# IWA - Input Weather A
-This is a Weather Sensor measuring Atmospheric **Temperature** and Relative **Humidity**
+# ILB - Input Light B
+This is a Light Sensor measuring Ambient and Ultraviolet Light.
 | Specifications | |
 | --: | :--: |
 | Communication | I2C |
-| I2C Address | 0x44 |
-| ChipSet | Sensirion SHT30-DIS|
-| Datasheet | [.pdf](https://sensirion.com/media/documents/213E6A3B/61641DC3/Sensirion_Humidity_Sensors_SHT3x_Datasheet_digital.pdf) |
-| Suggested Arduino Library | [GitHub](https://github.com/wemos/WEMOS_SHT3x_Arduino_Library) |
-| Temperature Accuracy | ±0.2 °C |
-| Temperature Range | -40 to 125 °C |
-| Humidity Accuracy | ± 2 %RH |
-| Humidity Range | 0 to 100 %RH |
+| I2C Address | 0x53 |
+| ChipSet | LITE-ON LTR-390|
+| Datasheet | [.pdf](https://optoelectronics.liteon.com/upload/download/DS86-2015-0004/LTR-390UV_Final_%20DS_V1%201.pdf) |
+| Suggested Arduino Library | [GitHub](https://github.com/levkovigor/LTR390) |
 
 ## Supported I2C Modes
 - [x] 100 kbit/s Standard Mode (SM) 
 - [x] 400 kbit/s	Fast Mode	FM
-- [x] 1 Mbit/s	Fast Mode Plus	FM+
+- [ ] 1 Mbit/s	Fast Mode Plus	FM+
 - [ ] 3.4Mbit/s	High Speed Mode	HS
 - [ ] 5 Mbit/s	Ultra Fast Mode	UFM
 

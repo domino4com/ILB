@@ -2,13 +2,13 @@
 This is a Light Sensor measuring Ambient and Ultraviolet Light.
 | Specifications | |
 | --: | :--: |
-| Communication | I2C |
-| I2C Address | 0x53 |
+| Communication | I²C |
+| I²C Address | 0x53 |
 | ChipSet | LITE-ON LTR-390|
 | Datasheet | [.pdf](https://optoelectronics.liteon.com/upload/download/DS86-2015-0004/LTR-390UV_Final_%20DS_V1%201.pdf) |
 | Suggested Arduino Library | [GitHub](https://github.com/levkovigor/LTR390) |
 
-## Supported I2C Modes
+## Supported I²C Modes
 - [x] 100 kbit/s Standard Mode (SM) 
 - [x] 400 kbit/s	Fast Mode	FM
 - [ ] 1 Mbit/s	Fast Mode Plus	FM+

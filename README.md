@@ -1,3 +1,5 @@
+<img src="assets/ILB.svg" width=200 align="right">
+
 # ILB - Input Light B
 This is a Light Sensor measuring Ambient and Ultraviolet Light.
 | Specifications | |

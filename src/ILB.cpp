@@ -66,5 +66,3 @@
 // bool ILB::begin(uint8_t x, uint8_t y, bool z) {
 //   return true; // Success
 // }
-
-}

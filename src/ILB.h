@@ -15,6 +15,6 @@
 class ILB : public LTR390
 {
 
-}  
+};
 
 #endif // _ILB_H_

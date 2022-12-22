@@ -13,9 +13,9 @@
 #include "Arduino.h"
 #include <LTR390.h>
 
-class ILB : public LTR390
-{
-
+class ILB : public LTR390 {
+public:
+private:
 };
 
 #endif // _ILB_H_

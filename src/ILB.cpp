@@ -38,17 +38,17 @@
     @note   Call the object's begin() function before use -- buffer
             allocation is performed there!
 */
-ILB::ILB(uint8_t x, uint8_t z, int8_t z)
-    : xxx(x, -1), zzz(NULL), wire(twi ? twi : &Wire), buffer(NULL),
-      j(-1), k(-1), l(-1), csPin(-1), zzz(z)
-{
-}
+// ILB::ILB(uint8_t x, uint8_t z, int8_t z)
+//     : xxx(x, -1), zzz(NULL), wire(twi ? twi : &Wire), buffer(NULL),
+//       j(-1), k(-1), l(-1), csPin(-1), zzz(z)
+// {
+// }
  
 /*!
     @brief  Destructor for ILB object.
 */
-ILB::~ILB(void) {
-}
+// ILB::~ILB(void) {
+// }
 
 /*!
     @brief  Initialize sensor.
@@ -63,8 +63,8 @@ ILB::~ILB(void) {
             proceeding.
     @note   MUST call this function before any drawing or updates!
 */
-bool ILB::begin(uint8_t x, uint8_t y, bool z) {
-  return true; // Success
-}
+// bool ILB::begin(uint8_t x, uint8_t y, bool z) {
+//   return true; // Success
+// }
 
 }

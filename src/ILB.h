@@ -10,6 +10,11 @@
 #ifndef _ILB_H_
 #define _ILB_H_
 
+#include <LTR390.h>
 
+class ILB : public LTR390
+{
+
+}  
 
 #endif // _ILB_H_

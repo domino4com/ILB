@@ -15,6 +15,7 @@
 
 class ILB : public LTR390 {
 public:
+  ILB() : LTR390();
 private:
 };
 

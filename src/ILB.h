@@ -18,8 +18,8 @@ class ILB : public LTR390 {
 public:
   ILB() : LTR390() {};
   ILB(int addr) : LTR390( addr) {};
-  ILB(TwoWire *w, int addr) : LTR390( *w, addr) {};
-  ILB(TwoWire *w) : LTR390(*w) {};
+  ILB(TwoWire *w, int addr) : LTR390( w, addr) {};
+  ILB(TwoWire *w) : LTR390(w) {};
 private:
 };
 

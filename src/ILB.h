@@ -12,16 +12,10 @@
 
 #include "Arduino.h"
 #include <LTR390.h>
-#include <Wire.h>
 
 class ILB : public LTR390 {
 public:
   using LTR390::LTR390;
-//   ILB() : LTR390() {};
-//   ILB(int addr) : LTR390( addr) {};
-//   ILB(TwoWire *w, int addr) : LTR390( w, addr) {};
-//   ILB(TwoWire *w) : LTR390(w) {};
-private:
 };
 
 #endif // _ILB_H_

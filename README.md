@@ -1,4 +1,8 @@
 <img src="assets/ILB.svg" width=200 align="right">
+[![arduino-library-badge](https://www.ardu-badge.com/badge/ILB.svg?)](https://www.ardu-badge.com/ILB)
+[![Actions Status](https://github.com/domino4com/ILB/workflows/PlatformIO/badge.svg)](https://github.com/domino4com/ILB/actions)
+[![Actions Status](https://github.com/domino4com/ILB/workflows/Arduino/badge.svg)](https://github.com/domino4com/ILB/actions)
+
 
 # ILB - Input Light B
 This is a Light Sensor measuring Ambient and Ultraviolet Light.

@@ -1,7 +1,10 @@
 <img src="assets/ILB.svg" width=200 align="right">
+
 [![arduino-library-badge](https://www.ardu-badge.com/badge/ILB.svg?)](https://www.ardu-badge.com/ILB)
+
 [![PlatformIO](https://github.com/domino4com/ILB/actions/workflows/platformio.yml/badge.svg)](https://github.com/domino4com/ILB/actions/workflows/platformio.yml)
-[![Actions Status](https://github.com/domino4com/ILB/workflows/Arduino/badge.svg)](https://github.com/domino4com/ILB/actions)
+
+[![Arduino](https://github.com/domino4com/ILB/actions/workflows/arduino.yml/badge.svg)](https://github.com/domino4com/ILB/actions/workflows/arduino.yml)
 
 
 # ILB - Input Light B

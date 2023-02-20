@@ -4,7 +4,7 @@
     "description": "ILB: Input Light B - Lux and UVI Sensor",
     "keywords": "ILB UVI LUX ALS",
     "authors": [{
-        "name": "gotfredsen",
+        "name": "Bjarke Gotfredsen",
         "url": "https://github.com/gotfredsen",
         "maintainer": true
     }],

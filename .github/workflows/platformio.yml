@@ -27,11 +27,10 @@ jobs:
         pip install platformio
     - name: Install platformIO libraries
       run: pio lib install
-    - name: Run PlatformIO Example
-      env:
-        PLATFORMIO_SRC_DIR: "./examples/example"
-      run: platformio run
-    - name: Run PlatformIO JSON
-      env:
-        PLATFORMIO_SRC_DIR: "./examples/json"
-      run: platformio run
+    - name: Run PlatformIO Examples
+      run: |
+        for sketch in examples/*; do
+          env:
+            PLATFORMIO_SRC_DIR: "${sketch}"
+          run: platformio run
+        done

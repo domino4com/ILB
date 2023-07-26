@@ -12,15 +12,7 @@ on:
       - created
  
 jobs:
-  test-matrix:
- 
-    strategy:
-      matrix:
-        arduino-platform: ["arduino:esp32"]
-        include:
-          - arduino-platform: "esp32:esp32"
-            fqbn: "esp32:esp32:esp32"
-
+  build:
     runs-on: ubuntu-latest 
 
     permissions: write-all
@@ -36,7 +28,10 @@ jobs:
         run: |
           arduino-cli core update-index
           arduino-cli board listall
-          arduino-cli core install ${{ matrix.arduino-platform }}
+          arduino-cli core install arduino:esp32
+
+      - name: Install libraries
+        run: arduino-cli lib install "bblanchon/ArduinoJson@^6.21.3"
  
       - name: Compile Sketch
-        run: arduino-cli compile --fqbn ${{ matrix.fqbn }} examples/json
+        run: arduino-cli compile --fqbn esp32:esp32:esp32 examples/json

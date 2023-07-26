@@ -1,4 +1,11 @@
+#include <ArduinoJson.h>
 #include <Wire.h>
+#ifndef I2C_SDA
+#define I2C_SDA SDA
+#endif
+#ifndef I2C_SCL
+#define I2C_SCL SCL
+#endif
 #include <ILB.h>
 
 ILB ilb;

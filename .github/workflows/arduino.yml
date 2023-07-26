@@ -18,8 +18,8 @@ jobs:
       matrix:
         arduino-platform: ["arduino:esp32"]
         include:
-          - arduino-platform: "arduino:esp32"
-            fqbn: "esp32:esp32"
+          - arduino-platform: "esp32:esp32"
+            fqbn: "esp32:esp32:esp32"
 
     runs-on: ubuntu-latest 
 
@@ -35,6 +35,7 @@ jobs:
       - name: Install platform
         run: |
           arduino-cli core update-index
+          arduino-cli board listall
           arduino-cli core install ${{ matrix.arduino-platform }}
  
       - name: Compile Sketch

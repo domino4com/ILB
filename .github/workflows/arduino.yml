@@ -33,7 +33,7 @@ jobs:
       - name: Install platform
         run: |
           arduino-cli core update-index
-          arduino-cli core install $
+          arduino-cli core install ${{ matrix.board }}
       
       - name: Build
         run: |

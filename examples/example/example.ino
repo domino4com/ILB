@@ -13,7 +13,7 @@ ILB ilb;
 void setup() {
     Serial.begin(115200);
     delay(1000);
-    Serial.printf("\ILB Test\n");
+    Serial.printf("\nILB Test\n");
 
     Wire.setPins(I2C_SDA, I2C_SCL);
     Wire.begin();

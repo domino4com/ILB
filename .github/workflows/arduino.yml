@@ -19,7 +19,7 @@ jobs:
         arduino-platform: ["arduino:esp32"]
         include:
           - arduino-platform: "arduino:esp32"
-            fqbn: "esp32:esp32:esp32"
+            fqbn: "esp32:esp32"
 
     runs-on: ubuntu-latest 
 

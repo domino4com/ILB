@@ -23,6 +23,11 @@ jobs:
  
       - name: Setup Arduino CLI
         uses: arduino/setup-arduino-cli@v1.1.1
+
+      - name: Install repo as library
+        run: |
+          mkdir -p "$HOME/Arduino/libraries"
+          ln -s "$PWD" "$HOME/Arduino/libraries/."  
  
       - name: Install platform
         run: |
@@ -32,6 +37,9 @@ jobs:
 
       - name: Install libraries
         run: arduino-cli lib install "ArduinoJson"
+
+      - name: Compile Example
+        run: arduino-cli compile --fqbn esp32:esp32:esp32 ./examples/example  --warnings more
  
-      - name: Compile Sketch
-        run: arduino-cli compile --fqbn esp32:esp32:esp32 examples/json
+      - name: Compile JSON
+        run: arduino-cli compile --fqbn esp32:esp32:esp32 ./examples/json  --warnings more

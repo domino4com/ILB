@@ -42,7 +42,7 @@ jobs:
       fail-fast: true
       matrix:
         board:
-          - adafruit_feather_m0
+          - esp32dev
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

@@ -1,5 +1,43 @@
-- uses: arduino/compile-sketches@v1
-  with:
-    fqbn: "esp32:esp32:esp32"
-    libraries: |
-      - name:  ArduinoJson
+name: Arduino
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - main
+  pull_request:
+  release:
+    types:
+      - created
+
+jobs:
+  Boards:
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        board:
+          - esp32:esp32:esp32
+
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+
+      - name: Setup Arduino CLI
+        uses: arduino/setup-arduino-cli@v1.1.1
+      
+      - name: Install platform
+        run: |
+          arduino-cli core update-index
+          arduino-cli core install $
+      
+      - name: Build
+        run: |
+          for sketch in examples/*; do
+            run: arduino-cli compile --fqbn ${{ matrix.board }} ${sketch} --warnings more
+          done
+        

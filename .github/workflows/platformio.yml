@@ -57,7 +57,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install platformio
       - name: Install PlatformIO Libraries
-          run: |
+        run: |
           pio pkg install 
       - name: Build
         run: |

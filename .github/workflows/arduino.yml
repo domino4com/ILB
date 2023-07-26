@@ -1,43 +1,31 @@
 name: Arduino
-
-on:
-  push:
-    branches:
-      - master
-      - develop
-      - main
-  pull_request:
-  release:
-    types:
-      - created
-
+ 
+on: [push, pull_request]
+ 
 jobs:
-  Boards:
-    timeout-minutes: 10
+  test-matrix:
+ 
     strategy:
-      fail-fast: false
       matrix:
-        board:
-          - esp32:esp32:esp32
+        arduino-platform: ["arduino:esp32"]
+        include:
+          - arduino-platform: "arduino:esp32"
+            fqbn: "esp32:esp32:esp32"
 
-
-    runs-on: ubuntu-latest
-
+    runs-on: windows-latest
+ 
     steps:
       - name: Checkout
-        uses: actions/checkout@main
-
+        uses: actions/checkout@master
+ 
       - name: Setup Arduino CLI
-        uses: arduino/setup-arduino-cli@v1.1.1
-      
+        uses: arduino/setup-arduino-cli@v1.0.0
+ 
       - name: Install platform
         run: |
           arduino-cli core update-index
-          arduino-cli core install ${{ matrix.board }}
-      
-      - name: Build
-        run: |
-          for sketch in examples/*; do
-            run: arduino-cli compile --fqbn ${{ matrix.board }} ${sketch} --warnings more
-          done
+          arduino-cli core install ${{ matrix.arduino-platform }}
+ 
+      - name: Compile Sketch
+        run: arduino-cli compile --fqbn ${{ matrix.fqbn }} ./json
         

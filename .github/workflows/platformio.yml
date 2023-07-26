@@ -63,5 +63,5 @@ jobs:
       - name: Build
         run: |
           for sketch in examples/*; do
-            platformio ci --keep-build-dir --board ${{ matrix.board }} ${sketch} || exit 1;
+            platformio ci -v -c --lib src --keep-build-dir --board ${{ matrix.board }} ${sketch} || exit 1;
           done

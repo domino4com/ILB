@@ -38,4 +38,4 @@ jobs:
           arduino-cli core install ${{ matrix.arduino-platform }}
  
       - name: Compile Sketch
-        run: arduino-cli compile --fqbn ${{ matrix.fqbn }} ./json
+        run: arduino-cli compile --fqbn ${{ matrix.fqbn }} examples/json

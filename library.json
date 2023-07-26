@@ -1,8 +1,8 @@
 {
-    "name": "IGA",
+    "name": "ILB",
     "version": "1.0.0",
-    "description": "IGA: Input Gas A - Total Volatile Organic Compounds and CO2 Equivalent Sensor",
-    "keywords": "IGA CO2 TVOC",
+    "description": "ILB: Input Gas A - Total Volatile Organic Compounds and CO2 Equivalent Sensor",
+    "keywords": "ILB CO2 TVOC",
     "authors": [{
         "name": "Bjarke Gotfredsen",
         "url": "https://github.com/gotfredsen",
@@ -10,9 +10,9 @@
     }],
     "repository": {
         "type": "git",
-        "url": "https://github.com/domino4com/IGA.git"
+        "url": "https://github.com/domino4com/ILB.git"
     },
-    "homepage": "https://github.com/domino4com/IGA",
+    "homepage": "https://github.com/domino4com/ILB",
     "export": {
         "include": [
             "LICENSE",
@@ -26,7 +26,7 @@
     },
     "frameworks": ["arduino", "espidf"],
     "platforms": "esp32",
-    "headers": "IGA.h",
+    "headers": "ILB.h",
     "dependencies":
     {
         "bblanchon/ArduinoJson": "^6.21.3"

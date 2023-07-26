@@ -58,9 +58,10 @@ jobs:
           pip install platformio
       - name: Install PlatformIO Libraries
         run: |
+          pio pkg update
           pio pkg install 
       - name: Build
         run: |
           for sketch in examples/*; do
-            platformio ci --lib src --keep-build-dir --board ${{ matrix.board }} ${sketch} || exit 1;
+            platformio ci --keep-build-dir --board ${{ matrix.board }} ${sketch} || exit 1;
           done

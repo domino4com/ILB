@@ -1,6 +1,15 @@
 name: Arduino
  
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - main
+  pull_request:
+  release:
+    types:
+      - created
  
 jobs:
   test-matrix:
@@ -12,14 +21,16 @@ jobs:
           - arduino-platform: "arduino:esp32"
             fqbn: "esp32:esp32:esp32"
 
-    runs-on: windows-latest
- 
+    runs-on: ubuntu-latest 
+
+    permissions: write-all
+
     steps:
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@main
  
       - name: Setup Arduino CLI
-        uses: arduino/setup-arduino-cli@v1.0.0
+        uses: arduino/setup-arduino-cli@v1.1.1
  
       - name: Install platform
         run: |
@@ -28,4 +39,3 @@ jobs:
  
       - name: Compile Sketch
         run: arduino-cli compile --fqbn ${{ matrix.fqbn }} ./json
-        

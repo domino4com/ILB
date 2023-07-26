@@ -1,8 +1,8 @@
 {
-    "name": "ILB",
+    "name": "IGA",
     "version": "1.0.0",
-    "description": "ILB: Input Light B - Lux and UVI Sensor",
-    "keywords": "ILB UVI LUX ALS",
+    "description": "IGA: Input Gas A - Total Volatile Organic Compounds and CO2 Equivalent Sensor",
+    "keywords": "IGA CO2 TVOC",
     "authors": [{
         "name": "Bjarke Gotfredsen",
         "url": "https://github.com/gotfredsen",
@@ -10,9 +10,9 @@
     }],
     "repository": {
         "type": "git",
-        "url": "https://github.com/domino4com/ILB.git"
+        "url": "https://github.com/domino4com/IGA.git"
     },
-    "homepage": "https://github.com/domino4com/ILB",
+    "homepage": "https://github.com/domino4com/IGA",
     "export": {
         "include": [
             "LICENSE",
@@ -26,9 +26,9 @@
     },
     "frameworks": ["arduino", "espidf"],
     "platforms": "esp32",
-    "headers": "ILB.h",
+    "headers": "IGA.h",
     "dependencies":
     {
-        "levkovigor/LTR390": "^1.0.8"
+        "bblanchon/ArduinoJson": "^6.21.3"
     }
 }

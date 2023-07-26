@@ -31,7 +31,7 @@ jobs:
           arduino-cli core install arduino:esp32
 
       - name: Install libraries
-        run: arduino-cli lib install "bblanchon/ArduinoJson"
+        run: arduino-cli lib install "ArduinoJson"
  
       - name: Compile Sketch
         run: arduino-cli compile --fqbn esp32:esp32:esp32 examples/json

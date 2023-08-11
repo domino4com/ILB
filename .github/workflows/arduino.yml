@@ -2,14 +2,15 @@ name: Arduino
  
 on:
   push:
-    branches:
-      - master
-      - develop
-      - main
+    paths:
+      - examples/**
+      - src/**
   pull_request:
   release:
     types:
       - created
+  schedule:
+    - cron: '0 5 15 * *'
  
 jobs:
   build:

@@ -75,7 +75,7 @@ bool ILB::getJSON(JsonObject &doc) {
     dataSet["value"] = UVI;
     dataSet["unit"] = "";
 
-    dataArray.add(dataSet);  // Subsequent data sets
+    dataSet = dataArray.createNestedObject();   // Subsequent data sets
     dataSet["name"] = "Lux";
     dataSet["value"] = Lux;
     dataSet["unit"] = "lx";

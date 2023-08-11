@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_i_l_b_8h" kind="file" language="C++">
+    <compoundname>ILB.h</compoundname>
+    <includes local="no">ArduinoJson.h</includes>
+    <includes local="no">Wire.h</includes>
+    <includedby refid="_i_l_b_8cpp" local="yes">src/ILB.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/ILB.h</label>
+        <link refid="_i_l_b_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="3">
+        <label>Wire.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_i_l_b" prot="public">ILB</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_i_l_b_8h_1a8dde01add110cf99490065fb86631183" prot="public" static="no">
+        <name>UV_SENSITIVITY</name>
+        <initializer>1400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="6" column="11" bodyfile="src/ILB.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1af6b7be186f7d117cf55d8274394ab2fe" prot="public" static="no">
+        <name>WFAC</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="8" column="9" bodyfile="src/ILB.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1a329de4eb4533c6d03d371f562d5db99e" prot="public" static="no">
+        <name>ILB_ADDRESS</name>
+        <initializer>0x53</initializer>
+        <briefdescription>
+<para>I2C address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="16" column="9" bodyfile="src/ILB.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1ac24e81112891e70f981142526db03e33" prot="public" static="no">
+        <name>ILB_MAIN_CTRL</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+<para>Main control register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="17" column="9" bodyfile="src/ILB.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1a9f8798a83ba531126c1fcae716adda01" prot="public" static="no">
+        <name>ILB_MEAS_RATE</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+<para>Resolution and data rate. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="18" column="9" bodyfile="src/ILB.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1a53298ff47856b44caaa7641eb6897af2" prot="public" static="no">
+        <name>ILB_GAIN</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+<para>ALS and UVS gain range. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="19" column="9" bodyfile="src/ILB.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1ae3257b8dddb857d9a24bd212629da77f" prot="public" static="no">
+        <name>ILB_PART_ID</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+<para>Part id/revision register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="20" column="9" bodyfile="src/ILB.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1ae8a5e4be0f91c586b43e0d41d729d079" prot="public" static="no">
+        <name>ILB_MAIN_STATUS</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+<para>Main status register. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="21" column="9" bodyfile="src/ILB.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1afcbc4d127a089a26163be0ed662d9efb" prot="public" static="no">
+        <name>ILB_ALSDATA_LSB</name>
+        <initializer>0x0D</initializer>
+        <briefdescription>
+<para>ALS data lowest byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="22" column="9" bodyfile="src/ILB.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1a01ba222180d9e3aefec3c64e0a7d5207" prot="public" static="no">
+        <name>ILB_ALSDATA_MSB</name>
+        <initializer>0x0E</initializer>
+        <briefdescription>
+<para>ALS data middle byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="23" column="9" bodyfile="src/ILB.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1a8d9a7aa00bb5fa27c9dab364451ff25b" prot="public" static="no">
+        <name>ILB_ALSDATA_HSB</name>
+        <initializer>0x0F</initializer>
+        <briefdescription>
+<para>ALS data highest byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="24" column="9" bodyfile="src/ILB.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1aeb4d5db00541d4fb578217a127a4427f" prot="public" static="no">
+        <name>ILB_UVSDATA_LSB</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+<para>UVS data lowest byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="25" column="9" bodyfile="src/ILB.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1a2b69705d501f6811097a071cdee16327" prot="public" static="no">
+        <name>ILB_UVSDATA_MSB</name>
+        <initializer>0x11</initializer>
+        <briefdescription>
+<para>UVS data middle byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="26" column="9" bodyfile="src/ILB.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1a9fc87eed9a3e7ea52b28bac491823213" prot="public" static="no">
+        <name>ILB_UVSDATA_HSB</name>
+        <initializer>0x12</initializer>
+        <briefdescription>
+<para>UVS data highest byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="27" column="9" bodyfile="src/ILB.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1a6e80fcac86d4a408102c1d0a64d4bc41" prot="public" static="no">
+        <name>ILB_INT_CFG</name>
+        <initializer>0x19</initializer>
+        <briefdescription>
+<para>Interrupt configuration. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="28" column="9" bodyfile="src/ILB.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1a8483b4b94ecd740f46633f952edc2570" prot="public" static="no">
+        <name>ILB_INT_PST</name>
+        <initializer>0x1A</initializer>
+        <briefdescription>
+<para>Interrupt persistance config. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="29" column="9" bodyfile="src/ILB.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1ad18dfd2e773a9085a1438803e1a512f1" prot="public" static="no">
+        <name>ILB_THRESH_UP</name>
+        <initializer>0x21</initializer>
+        <briefdescription>
+<para>Upper threshold, low byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="30" column="9" bodyfile="src/ILB.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_i_l_b_8h_1abf8fecc7ef90b1036d531dff620f9a7a" prot="public" static="no">
+        <name>ILB_THRESH_LOW</name>
+        <initializer>0x24</initializer>
+        <briefdescription>
+<para>Lower threshold, low byte. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="31" column="9" bodyfile="src/ILB.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_i_l_b_8h_1aee654475c3f9c493c621b20469a899ad" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ILB_mode_t</name>
+        <enumvalue id="_i_l_b_8h_1aee654475c3f9c493c621b20469a899adaee868127f6529e4b37f960d5c12f6570" prot="public">
+          <name>ILB_MODE_ALS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_l_b_8h_1aee654475c3f9c493c621b20469a899ada9e66a40608299d146cd5798b32320b56" prot="public">
+          <name>ILB_MODE_UVS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="33" column="1" bodyfile="src/ILB.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="enum" id="_i_l_b_8h_1a4f8081f5270507e388d40d5a85000569" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ILB_gain_t</name>
+        <enumvalue id="_i_l_b_8h_1a4f8081f5270507e388d40d5a85000569a2fb1630781743fea6f697dfebe34d074" prot="public">
+          <name>ILB_GAIN_1</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_l_b_8h_1a4f8081f5270507e388d40d5a85000569a26d44677721d186cbdad41c2ca1581f4" prot="public">
+          <name>ILB_GAIN_3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_l_b_8h_1a4f8081f5270507e388d40d5a85000569a1e08dde06844194ec216c888d15e89b6" prot="public">
+          <name>ILB_GAIN_6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_l_b_8h_1a4f8081f5270507e388d40d5a85000569afab73d659ac10d3edf5726f8252447d2" prot="public">
+          <name>ILB_GAIN_9</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_l_b_8h_1a4f8081f5270507e388d40d5a85000569a30078968f030864f4a4d58aeaf5f981b" prot="public">
+          <name>ILB_GAIN_18</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="38" column="1" bodyfile="src/ILB.h" bodystart="38" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="_i_l_b_8h_1a5e46149cb5bc49ae73c5621a8cb87a32" prot="public" static="no" strong="no">
+        <type></type>
+        <name>ILB_resolution_t</name>
+        <enumvalue id="_i_l_b_8h_1a5e46149cb5bc49ae73c5621a8cb87a32a68dd49e2281265dc2f3e5bf4aeba9fc3" prot="public">
+          <name>ILB_RESOLUTION_20BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_l_b_8h_1a5e46149cb5bc49ae73c5621a8cb87a32a28b63ea4d44a5a7fe4192a3b10137ea8" prot="public">
+          <name>ILB_RESOLUTION_19BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_l_b_8h_1a5e46149cb5bc49ae73c5621a8cb87a32a2687b57515457ebbefdb668d58472b2a" prot="public">
+          <name>ILB_RESOLUTION_18BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_l_b_8h_1a5e46149cb5bc49ae73c5621a8cb87a32a5ec2ca46defb8099045a1335530930b2" prot="public">
+          <name>ILB_RESOLUTION_17BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_l_b_8h_1a5e46149cb5bc49ae73c5621a8cb87a32a53a091835acffafa6b58bc3f969485ab" prot="public">
+          <name>ILB_RESOLUTION_16BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_i_l_b_8h_1a5e46149cb5bc49ae73c5621a8cb87a32a0eab2807441f9c83283cffb444260a29" prot="public">
+          <name>ILB_RESOLUTION_13BIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/ILB.h" line="46" column="1" bodyfile="src/ILB.h" bodystart="46" bodyend="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ILB.h"/>
+  </compounddef>
+</doxygen>

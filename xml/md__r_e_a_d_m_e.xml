@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md__r_e_a_d_m_e</compoundname>
+    <title>README</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><image type="html" name="assets/ILB.svg" inline="yes"></image>
+</para>
+<para><ulink url="https://github.com/domino4com/ILB/actions/workflows/platformio.yml"><image type="html" name="https://github.com/domino4com/ILB/actions/workflows/platformio.yml/badge.svg" alt="PlatformIO" inline="yes"></image>
+</ulink> <ulink url="https://github.com/domino4com/ILB/actions/workflows/arduino.yml"><image type="html" name="https://github.com/domino4com/ILB/actions/workflows/arduino.yml/badge.svg" alt="Arduino" inline="yes"></image>
+</ulink></para>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md1">
+<title>ILB - Input Light B</title>
+<para>This is a Light Sensor measuring Ambient and Ultraviolet Light. <table rows="7" cols="2"><row>
+<entry thead="yes" align='right'><para>Specifications   </para>
+</entry><entry thead="yes" align='center'><para></para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>Communication   </para>
+</entry><entry thead="no" align='center'><para>I²C    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>I²C Address   </para>
+</entry><entry thead="no" align='center'><para>0x53    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>ChipSet   </para>
+</entry><entry thead="no" align='center'><para>LITE-ON LTR-390    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>Datasheet   </para>
+</entry><entry thead="no" align='center'><para><ulink url="https://optoelectronics.liteon.com/upload/download/DS86-2015-0004/LTR-390UV_Final_%20DS_V1%201.pdf">.pdf</ulink>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>Suggested Arduino Library   </para>
+</entry><entry thead="no" align='center'><para><ulink url="https://github.com/levkovigor/LTR390">GitHub</ulink>    </para>
+</entry></row>
+<row>
+<entry thead="no" align='right'><para>Suggested MicroPython LIbrary   </para>
+</entry><entry thead="no" align='center'><para><ulink url="https://github.com/adafruit/Adafruit_CircuitPython_LTR390">GitHub</ulink>   </para>
+</entry></row>
+</table>
+</para>
+<sect2 id="md__r_e_a_d_m_e_1autotoc_md2">
+<title>Supported I²C Modes</title>
+<para><itemizedlist>
+<listitem><para>[x] 100 kbit/s Standard Mode (SM)</para>
+</listitem><listitem><para>[x] 400 kbit/s Fast Mode FM</para>
+</listitem><listitem><para>[ ] 1 Mbit/s Fast Mode Plus FM+</para>
+</listitem><listitem><para>[ ] 3.4Mbit/s High Speed Mode HS</para>
+</listitem><listitem><para>[ ] 5 Mbit/s Ultra Fast Mode UFM</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md3">
+<title>License:</title>
+<para><image type="html" name="assets/CC-BY-NC-SA.png" inline="yes"></image>
+ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License</para>
+<para><ulink url="https://creativecommons.org/licenses/by-nc-sa/4.0/">View License Deed</ulink> | <ulink url="https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode">View Legal Code</ulink> </para>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

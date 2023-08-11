@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.7" xml:lang="en-US">
+  <compounddef id="_i_l_b_8cpp" kind="file" language="C++">
+    <compoundname>ILB.cpp</compoundname>
+    <includes refid="_i_l_b_8h" local="yes">ILB.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/ILB.cpp</label>
+        <link refid="_i_l_b_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ILB.h</label>
+        <link refid="_i_l_b_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ArduinoJson.h</label>
+      </node>
+      <node id="4">
+        <label>Wire.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/ILB.cpp"/>
+  </compounddef>
+</doxygen>

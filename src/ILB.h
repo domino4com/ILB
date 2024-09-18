@@ -60,7 +60,7 @@ class ILB {
     ILB(TwoWire *w);
     bool begin();
     bool getData(float &Lux, float &UVI);
-    bool getJSON(JsonObject &doc);
+    bool getJSON(JsonDocument &doc);
 
     bool reset(void);
 

@@ -7,8 +7,8 @@
 #define I2C_SCL SCL
 #endif
 
-#include "ILB.h" // Change here
-ILB input;       // And here
+#include "ILB.h"  // Change here
+ILB input;        // And here
 
 void setup() {
     Serial.begin(115200);
@@ -27,8 +27,7 @@ void setup() {
 }
 
 void loop() {
-    StaticJsonDocument<256> doc;
-    JsonObject root = doc.to<JsonObject>();
+    JsonDocument root;
 
     if (input.getJSON(root)) {
         serializeJsonPretty(root, Serial);

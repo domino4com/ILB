@@ -47,35 +47,33 @@ bool ILB::getData(float &UVI, float &Lux) {
     setResolution(ILB_RESOLUTION_18BIT);  // Recommended for Lux - 18-bit
     setMode(ILB_MODE_ALS);
     delay(100);
-    while (!newDataAvailable())
-        ;
+    while (!newDataAvailable());
     Lux = getLux();
 
     setGain(ILB_GAIN_18);                 // Recommended for UVI - x18
     setResolution(ILB_RESOLUTION_20BIT);  // Recommended for UVI - 20-bit
     setMode(ILB_MODE_UVS);
     delay(400);
-    while (!newDataAvailable())
-        ;
+    while (!newDataAvailable());
     UVI = getUVI();
 
     return true;  // Return true for successful read (add error handling if needed)
 }
 
-bool ILB::getJSON(JsonObject &doc) {
+bool ILB::getJSON(JsonDocument &doc) {
     float UVI, Lux;
     if (!getData(UVI, Lux)) {
         return false;
     }
 
-    JsonArray dataArray = doc.createNestedArray("ILB");
+    JsonArray dataArray = doc["ILB"].to<JsonArray>();
 
-    JsonObject dataSet = dataArray.createNestedObject();  // First data set
+    JsonObject dataSet = dataArray.add<JsonObject>();  // First data set
     dataSet["name"] = "UVI";
     dataSet["value"] = UVI;
     dataSet["unit"] = "";
 
-    dataSet = dataArray.createNestedObject();   // Subsequent data sets
+    dataSet = dataArray.add<JsonObject>();  // Subsequent data sets
     dataSet["name"] = "Lux";
     dataSet["value"] = Lux;
     dataSet["unit"] = "lx";
@@ -89,7 +87,7 @@ bool ILB::getJSON(JsonObject &doc) {
  */
 bool ILB::reset(void) {
     uint8_t _r = readRegister(ILB_MAIN_CTRL);
-    _r |= B00010000;
+    _r |= 0b00010000;
     writeRegister(ILB_MAIN_CTRL, _r);
     delay(10);
     _r = readRegister(ILB_MAIN_CTRL);
